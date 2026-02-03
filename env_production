@@ -1,0 +1,59 @@
+#--------------------------------------------------------------------
+# PRODUCTION ENVIRONMENT CONFIGURATION
+# Rename this file to .env on your server
+#--------------------------------------------------------------------
+
+# Set environment to production to hide errors and enable optimizations
+CI_ENVIRONMENT = production
+
+#--------------------------------------------------------------------
+# APP
+#--------------------------------------------------------------------
+
+# The live URL of your application
+app.baseURL = 'https://vehicle.nsscrky.ac.in/vehicle_register/'
+
+# Force HTTPS for all requests
+app.forceGlobalSecureRequests = true
+
+# Remove index.php from URLs
+app.indexPage = ''
+
+# Content Security Policy (Optional: Uncomment if you want strict security, finding violations first)
+# app.CSPEnabled = false
+
+#--------------------------------------------------------------------
+# DATABASE
+#--------------------------------------------------------------------
+
+# UPDATE THESE VALUES WITH YOUR PRODUCTION DATABASE CREDENTIALS
+database.default.hostname = localhost
+database.default.database = vehicledb
+database.default.username = your_db_username
+database.default.password = your_db_password
+database.default.DBDriver = MySQLi
+database.default.DBPrefix = 
+database.default.port = 3306
+
+#--------------------------------------------------------------------
+# SECURITY
+#--------------------------------------------------------------------
+
+# CSRF Protection is enabled in Config/Security.php, but you can override here if needed
+# security.csrfProtection = cookie
+
+#--------------------------------------------------------------------
+# SESSION
+#--------------------------------------------------------------------
+
+# Use file based sessions (ensure 'writable/session' is writable)
+session.driver = 'CodeIgniter\Session\Handlers\FileHandler'
+session.savePath = null
+session.cookieSecure = true
+
+#--------------------------------------------------------------------
+# LOGGING
+#--------------------------------------------------------------------
+
+# Log only critical errors in production
+logger.threshold = 1

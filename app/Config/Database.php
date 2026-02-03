@@ -25,13 +25,12 @@ class Database extends Config
      * @var array<string, mixed>
      */
     public array $default = [
-        'DSN'          => '',
-        'hostname'     => 'localhost',
-        'username'     => '',
-        'password'     => '',
+        'DSN'          => 'railway',
+        'hostname'  =>'gondola.proxy.rlwy.net',
+        'username'     => 'root', 'password'=>'ZlQPtnToxdsxLhmfsSdzOxnDlcUwsDoz',
         'database'     => '',
         'DBDriver'     => 'MySQLi',
-        'DBPrefix'     => '',
+        'DBPrefix'     => '_',
         'pConnect'     => false,
         'DBDebug'      => true,
         'charset'      => 'utf8mb4',

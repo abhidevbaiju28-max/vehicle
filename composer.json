@@ -37,9 +37,13 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     },
     "scripts": {
-        "test": "phpunit"
+        "test": "phpunit",
+        "start": "php spark serve --host 0.0.0.0 --port $PORT"
     }
 }
